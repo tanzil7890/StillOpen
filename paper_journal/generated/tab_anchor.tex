@@ -1,0 +1,11 @@
+\begin{tabular}{llrcccc}
+\toprule
+Dataset & Training cases keep & Cases & Positive & AUC & Brier score & Bias \\
+\midrule
+Traffic fines & labels of completed traces & 103,652 & 0.47 & 0.651 (0.646 to 0.657) & 0.180 (0.179 to 0.182) & $+0.043$ \\
+ & completed cases only & 99,085 & 0.47 & 0.655 (0.650 to 0.660) & 0.188 (0.186 to 0.190) & $+0.033$ \\
+\addlinespace
+BPI 2012, accepted & labels of completed traces & 3,748 & 0.47 & 0.678 (0.658 to 0.706) & 0.211 (0.204 to 0.217) & $-0.018$ \\
+ & completed cases only & 3,073 & 0.48 & 0.672 (0.647 to 0.701) & 0.213 (0.206 to 0.219) & $-0.032$ \\
+\bottomrule
+\end{tabular}

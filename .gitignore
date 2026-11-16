@@ -1,0 +1,15 @@
+# secrets
+.env
+
+# Python
+__pycache__/
+.pytest_cache/
+*.pt
+
+# experiments: environment, downloaded data and run outputs
+experiments/.venv/
+experiments/data/
+experiments/runs/
+
+# macOS
+.DS_Store

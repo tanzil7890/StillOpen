@@ -1,0 +1,14 @@
+1. Share of histories with a first payment within 365 days, cutoff 2007-09-13, two years of history, no features:
+  position histories  truth window rule ipcw, pooled share ipcw, own position
+         1     28186  0.446       0.442              0.382              0.449
+         2     15053  0.174       0.191              0.196              0.171
+         3     10639  0.223       0.251              0.250              0.214
+         4      8503  0.221       0.236              0.281              0.220
+
+2. With the boosted trees, two years of history:
+  cutoff 2004-07-26: 0% of the test histories have an amount that no training history followed for a year has
+    all features        Brier: window rule 0.279, ipcw 0.349; predicted minus actual share with a first payment within a year: window rule -0.007, ipcw +0.372
+    without the amount  Brier: window rule 0.279, ipcw 0.285; predicted minus actual share with a first payment within a year: window rule -0.033, ipcw +0.020
+  cutoff 2007-09-13: 99% of the test histories have an amount that no training history followed for a year has
+    all features        Brier: window rule 0.240, ipcw 0.473; predicted minus actual share with a first payment within a year: window rule +0.001, ipcw +0.564
+    without the amount  Brier: window rule 0.246, ipcw 0.285; predicted minus actual share with a first payment within a year: window rule +0.047, ipcw +0.177
